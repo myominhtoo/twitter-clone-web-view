@@ -1,6 +1,12 @@
+import AppRouter from "./router/AppRouter";
+import AppRoutes from "./router/AppRoutes";
 
 export default function App(){
   return (
-    <h1>Twitter clone</h1>
+    <>
+     <AppRouter>
+       <AppRoutes />
+     </AppRouter>
+    </>
   )
 }
