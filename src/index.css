@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Indie+Flower&family=Josefin+Sans:wght@300&family=Kalam:wght@700&family=Nunito&display=swap');
+
+:root{
+    --thm : rgba(0, 172, 238,1);
+    --dark : rgba(0,0,0,0.93);
+    --pale-dark : rgba(0,0,0,0.75);
+    --pale-snow: rgba(255,255,255,0.75);
+    --snow : rgba(255,255,255,1);
+}
+
+*{
+    font-family: 'Charm', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    background:var(--dark)
+}
+
+.fc-thm{
+    color:var(--thm);
+}
+
+.fc-p-snow{
+    color:var(--pale-snow);
+}
+
+
+/*
+ for cursor pointer
+ */
+.cs-pointer{
+    cursor:pointer;
+}
+
+
+/*
+for disabling custom bootstrap input
+ */
+.form-control {
+    border-radius:0.3rem !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-weight:bold;
+}
+
+.form-group{
+    margin:1rem 0 !important;
+}
+
+.form-label{
+    color:var(--pale-snow) !important;
+    font-size:18px !important;
+}
+
+.btn{
+    border-radius:0.3rem !important;
+}
+

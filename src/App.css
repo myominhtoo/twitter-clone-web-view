@@ -1,0 +1,57 @@
+
+/*
+ for outer container
+ */
+#outer-container{
+    width:100% !important;
+    height:100vh;
+    margin:0 auto;
+}
+
+/*
+for header
+ */
+#form-page-header{
+    width:100%;
+    padding:0.1rem 5rem 0 5rem;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#form-page-header #icon-section{
+    display:flex;
+    gap:0;
+    align-items:flex-start;
+}
+
+#header-logo {
+    font-size:3rem;
+    margin: 1rem 0.2rem 0 0;
+    color:var(--thm);
+}
+
+#header-title{
+    color:var(--pale-snow);
+    margin-bottom:2rem;
+    transform:translateY(15%);
+}
+
+#form-page-header #menu-section span{
+    margin:0 0.4rem;
+    cursor:pointer;
+}
+
+#main-container{
+    width:100%;
+    padding:2rem 5rem;
+    /*background:red;*/
+    margin:1rem 0;
+}
+
+#main-container #form-container{
+    width:45%;
+    padding:1rem;
+    margin:1.5rem auto;
+}
