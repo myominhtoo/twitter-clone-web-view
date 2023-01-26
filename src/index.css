@@ -48,6 +48,7 @@ for disabling custom bootstrap input
     border: none !important;
     box-shadow: none !important;
     font-weight:bold;
+    color:var(--pale-dark);
 }
 
 .form-group{
@@ -61,5 +62,9 @@ for disabling custom bootstrap input
 
 .btn{
     border-radius:0.3rem !important;
+}
+
+#link{
+    text-decoration: none !important;
 }
 

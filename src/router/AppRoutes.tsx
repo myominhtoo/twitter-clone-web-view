@@ -5,6 +5,7 @@ import RegisterAccPage from '../pages/account/RegisterAccPage'
 import ProfilePage from '../pages/account/ProfilePage'
 import FollowersPage from '../pages/account/FollowersPage'
 import FollowingsPage from '../pages/account/FollowingsPage'
+import VerifyEmailMessagePage from '../pages/account/VerifyEmailMessagePage';
 
 export default function AppRoutes(){
 
@@ -29,6 +30,8 @@ export default function AppRoutes(){
             <Route path='/followers' element={ <FollowersPage /> } />
 
             <Route path='/followings' element={ <FollowingsPage /> } />
+
+            <Route path='/verify-email' element={ <VerifyEmailMessagePage /> } />
         </Routes>
     )
 }

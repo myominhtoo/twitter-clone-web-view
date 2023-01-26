@@ -1,4 +1,8 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { PageHeaderTargetType } from "../../data/types/propTypes";
+import { Link } from "react-router-dom";
+import {
+    PageHeaderTarget
+} from '../../data/constant/appData';
 
 export function AppHeader(){
     return (
@@ -8,7 +12,11 @@ export function AppHeader(){
     )
 }
 
-export function FormPageHeader(){
+export function FormPageHeader(
+    {
+        target
+    } : PageHeaderTargetType
+){
     return (
         <header id='form-page-header'>
             <section id='icon-section'>
@@ -16,7 +24,18 @@ export function FormPageHeader(){
                 <span id='header-title'>#Tweet</span>
             </section>
             <section id='menu-section' >
-                <span className='text-danger'>Already Account?</span>
+                <Link
+                    id='link'
+                    to={ target == PageHeaderTarget.REGISTER ? '/login' : '/register'}
+                >
+                    <span className='text-danger'>
+                        {
+                            target == PageHeaderTarget.REGISTER
+                            ? 'Already Account?'
+                                : 'Create Account?'
+                        }
+                    </span>
+                </Link>
                 <span className='fc-p-snow' >|</span>
                 <span className='fc-thm' >Reviews</span>
             </section>

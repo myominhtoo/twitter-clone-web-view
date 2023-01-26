@@ -4,29 +4,29 @@ export interface ApiResponse<T> {
     status : number;
     ok : boolean;
     message : string;
-    data : T;
+    data : T | null,
     errors : Map<string,string>
 }
 
-export interface Account{
-    id : string;
-    firstName : string;
-    lastName : string;
-    fullName : string;
-    email : string;
-    password : string;
-    confirmPassword : string;
-    phone : string;
-    age : number;
-    dob : string | Date;
-    bios : string;
-    deviceId : string;
-    createdDate : string | Date;
-    updatedDate : string | Date;
-    lastLoggedInDate : string | Date;
-    lastLoggedInDeviceId : string | Date;
-    verificationCode : string;
-    hasVerifiedCode : boolean;
+export class Account{
+    id !: string;
+    firstName !: string;
+    lastName !: string;
+    fullName !: string;
+    email !: string;
+    password !: string;
+    confirmPassword !: string;
+    phone !: string;
+    age !: number;
+    dob !: string | Date;
+    bios !: string;
+    deviceId !: string;
+    createdDate !: string | Date;
+    updatedDate !: string | Date;
+    lastLoggedInDate !: string | Date;
+    lastLoggedInDeviceId !: string | Date;
+    verificationCode !: string;
+    hasVerifiedCode !: boolean;
 }
 
 export interface AccountConfigurations{
