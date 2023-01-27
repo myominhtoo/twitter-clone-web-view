@@ -59,10 +59,7 @@ export default function RegisterAccPage() {
             if( key == 'email' && value.length < account.email.length ){
                 prevError['message' as keyof typeof error] = '' as never;
             }
-
-            // if( error['message' as keyof typeof error ] == ''){
-                handleUpdateErrorState( key );
-            // }
+            handleUpdateErrorState( key );
             return { ...prevError };
         });
         account[key as keyof typeof account] = value as never;
@@ -120,7 +117,7 @@ export default function RegisterAccPage() {
             .then( res => {
                 setIsRegistering(false);
                 setError({});
-                navigate('/login?message=Success!');
+                navigate('/login?status=Success!');
 
             })
             .catch( ( e : AxiosError)  => {
