@@ -22,5 +22,3 @@ export const API = {
     DELETE_COMMENT : `/comments/:commentId`,
     TOGGLE_REACT_COMMENT : `/react-comment`
 }
-
-export default API;
